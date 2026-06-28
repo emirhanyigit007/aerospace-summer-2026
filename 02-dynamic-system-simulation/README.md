@@ -65,7 +65,7 @@ position → k Gain → negative feedback
 
 ## Simulink Model
 
-![Simulink Model](screenshots/01_simulink_model.png)
+![Simulink Model](screenshots/simulink_model.png)
 
 ## Results
 
@@ -73,19 +73,19 @@ The model was simulated using different damping coefficient values to observe ho
 
 ### Response for c = 0.5
 
-![Position Response c05](screenshots/02_position_response_c05.png)
+![Position Response c05](screenshots/position_response_c05.png)
 
 With a low damping coefficient, the system shows more oscillation and takes longer to settle.
 
 ### Response for c = 2
 
-![Position Response c2](screenshots/03_position_response_c2.png)
+![Position Response c2](screenshots/position_response_c2.png)
 
 With a moderate damping coefficient, the oscillations decrease and the system settles more smoothly.
 
 ### Response for c = 8
 
-![Position Response c8](screenshots/04_position_response_c8.png)
+![Position Response c8](screenshots/position_response_c8.png)
 
 With a higher damping coefficient, oscillations are reduced significantly. The response becomes smoother, but the system may react more slowly.
 
@@ -120,6 +120,14 @@ This type of model can be related to:
 * Mechanical subsystem response
 * Basic flight dynamics and control system modeling
 
+## Model File
+
+The Simulink model file is available in the `models` folder:
+
+```text
+models/mass_spring_damper.slx
+```
+
 ## What I Learned
 
 * How to model a second-order dynamic system in Simulink
@@ -131,6 +139,3 @@ This type of model can be related to:
 ## Next Step
 
 The next step is to build a simplified aircraft pitch control model using Simulink.
-## Projects
-
-- [Mass-Spring-Damper System Simulation](02-dynamic-system-simulation)
