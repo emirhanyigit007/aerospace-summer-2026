@@ -70,3 +70,23 @@ This repository documents my summer engineering learning path as a 3rd-year Aero
 
 5\. Simplified aircraft pitch control model
 
+
+
+\## Completed Courses
+
+
+
+\- MATLAB Onramp
+
+\- Simulink Onramp
+
+
+
+\## Certificates
+
+
+
+\- \[MATLAB Onramp Certificate](certificates/matlab-onramp-certificate.pdf)
+
+\- \[Simulink Onramp Certificate](certificates/simulink-onramp-certificate.pdf)
+
