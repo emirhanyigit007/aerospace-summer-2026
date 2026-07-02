@@ -1,28 +1,52 @@
-# UAV Longitudinal Pitch Control Using MATLAB & Simulink
+# 🚀 UAV Longitudinal Pitch Control Project
 
-## Overview
+<p align="center">
+  <b>MATLAB & Simulink Based UAV Pitch Control System</b>
+</p>
 
-This project presents a simplified **UAV longitudinal pitch control system** developed using **MATLAB** and **Simulink**. The main objective is to design, tune and validate a **PID controller** that enables a UAV to track a desired pitch angle command. The project includes mathematical modeling, open-loop analysis, PID controller design, gain tuning, command tracking, actuator saturation analysis and Simulink-based closed-loop verification.
+<p align="center">
+  Aerospace Engineering • Flight Dynamics • PID Control • MATLAB • Simulink
+</p>
 
 ---
 
-## Project Objectives
+## 📌 Project Overview
+
+This project presents a simplified **UAV longitudinal pitch control system** developed using **MATLAB and Simulink**.
+
+The main objective of this project is to model the pitch dynamics of a UAV, design a PID controller, analyze closed-loop performance, and validate the final control system using a Simulink block diagram model.
+
+This study was developed as part of my **Aerospace Summer 2026 Engineering Portfolio** to improve my skills in flight dynamics, control systems, MATLAB/Simulink workflows, and engineering documentation.
+
+---
+
+## 🎯 Project Goals
+
+The main goals of this project are:
 
 - Model simplified UAV longitudinal pitch dynamics
-- Analyze open-loop pitch response
+- Analyze the open-loop pitch response
 - Design a PID controller for pitch angle tracking
 - Tune PID gains and compare controller performance
-- Evaluate command tracking for different pitch references
+- Test different pitch reference commands
 - Analyze actuator saturation effects
 - Implement the final controller in Simulink
-- Compare MATLAB and Simulink-based results
-- Document the project in a professional engineering format
+- Evaluate closed-loop performance using engineering metrics
+- Document the project in a clean and professional format
 
 ---
 
-## System Model
+## 🛩️ System Description
 
-The UAV pitch dynamics are represented using a simplified second-order longitudinal motion model.
+The system represents the longitudinal pitch motion of a simplified UAV.
+
+The elevator deflection is used as the control input, and the pitch angle is the system output.
+
+```text
+Elevator Input → UAV Pitch Dynamics → Pitch Angle Response
+```
+
+The simplified pitch dynamics are represented using a second-order system.
 
 ```text
 theta_ddot + 2*zeta*omega_n*theta_dot + omega_n^2*theta = K_theta*delta_e
@@ -39,23 +63,27 @@ Where:
 | `zeta` | Damping ratio |
 | `K_theta` | Elevator-to-pitch gain |
 
-The corresponding transfer function is:
+---
+
+## 📐 Transfer Function Model
+
+The pitch dynamics are represented using the following transfer function:
 
 ```text
 G(s) = K_theta / (s^2 + 2*zeta*omega_n*s + omega_n^2)
 ```
 
-For this project, the numerical plant model is:
+For this project, the numerical transfer function is:
 
 ```text
 G(s) = 3 / (s^2 + 1.62s + 3.24)
 ```
 
-This simplified plant model represents the relationship between the elevator deflection input and the UAV pitch angle output.
+This transfer function represents the simplified relationship between the elevator deflection input and the UAV pitch angle output.
 
 ---
 
-## Control Architecture
+## 🔁 Control System Architecture
 
 The closed-loop pitch control system follows the structure below:
 
@@ -63,13 +91,13 @@ The closed-loop pitch control system follows the structure below:
 Pitch Command → Tracking Error → PID Controller → Elevator Saturation → UAV Pitch Dynamics → Pitch Response
 ```
 
-The feedback loop compares the desired pitch angle with the actual pitch response. The PID controller generates the required elevator command based on the tracking error. The elevator command is then limited using a saturation block to represent the physical actuator limit of the elevator surface.
+The pitch command is compared with the actual pitch response. The tracking error is processed by the PID controller, which generates the required elevator command. The elevator command is then limited by a saturation block to represent the physical actuator limit.
 
 ---
 
-## Final PID Controller
+## ⚙️ Final PID Controller
 
-After the PID tuning study, the final PID gains were selected as:
+After the PID tuning study, the final controller gains were selected as:
 
 | Gain | Value |
 |---|---:|
@@ -77,38 +105,38 @@ After the PID tuning study, the final PID gains were selected as:
 | `Ki` | 1.2 |
 | `Kd` | 1.8 |
 
-These gains were selected because they provided a stable closed-loop response with zero overshoot, zero steady-state error and improved settling time.
+These gains were selected because they provided a stable closed-loop response with zero overshoot, zero steady-state error, and improved settling time.
 
 ---
 
-## MATLAB Analysis
+## 🧪 MATLAB Studies
 
-The MATLAB part of the project includes open-loop pitch response analysis, PID controller implementation, PID gain tuning, final controller performance evaluation, command tracking analysis and actuator saturation study.
+The MATLAB part of the project includes several analysis stages:
 
-| Analysis | Description |
+| Study | Description |
 |---|---|
-| Open-loop response | Response of the UAV pitch dynamics without controller |
+| Open-loop response | Analysis of UAV pitch dynamics without a controller |
 | PID control | Closed-loop pitch tracking using a PID controller |
 | PID tuning | Comparison of different PID gain sets |
-| Final controller | Detailed performance analysis of selected PID gains |
-| Command tracking | Testing 5°, 10° and 15° pitch commands |
-| Actuator limit study | Analysis of elevator saturation and control authority |
+| Final controller analysis | Detailed performance analysis of the selected controller |
+| Command tracking | Testing 5°, 10°, and 15° pitch commands |
+| Actuator limit study | Evaluation of elevator saturation and control authority |
 
 ---
 
-## Simulink Implementation
+## 🧩 Simulink Implementation
 
-The final PID controller was implemented in Simulink using a block diagram model. The Simulink model verifies the MATLAB-based controller design in a visual closed-loop simulation environment.
+The final PID controller was implemented in Simulink using a closed-loop block diagram model.
 
 The Simulink model includes:
 
-- Step Input
-- Sum Block
-- PID Controller
-- Saturation Block
-- Transfer Function Block
-- Scope
-- To Workspace Blocks
+- Step input for pitch command
+- Sum block for tracking error
+- PID Controller block
+- Saturation block for elevator limit
+- Transfer Function block for UAV pitch dynamics
+- Scope block for visualization
+- To Workspace blocks for MATLAB result analysis
 
 The Simulink closed-loop structure is:
 
@@ -120,10 +148,9 @@ theta_ref → error → PID Controller → Elevator Saturation → UAV Pitch Dyn
 
 ---
 
-## Final Simulink Results
-![UAV Pitch Simulink Results](03_Results/uav_pitch_simulink_full_analysis.png)
+## 📊 Final Simulink Results
 
-For a **10-degree pitch command**, the final Simulink model achieved the following performance results:
+For a **10-degree pitch command**, the final Simulink model produced the following results:
 
 | Metric | Result |
 |---|---:|
@@ -137,36 +164,45 @@ For a **10-degree pitch command**, the final Simulink model achieved the followi
 
 ---
 
-## Simulink Response Plot
+## 📈 Simulink Response Plot
 
-![UAV Pitch Simulink Results](03_Results/uav_pitch_simulink_full_analysis.png)
-
----
-
-## Key Findings
-
-The final PID controller successfully tracks the 10-degree pitch reference command with zero overshoot, zero steady-state error and a stable closed-loop response. The final Simulink model reached the desired pitch angle with a settling time of approximately **5.61 seconds**.
-
-The command tracking analysis showed that the controller can successfully track 5-degree and 10-degree pitch commands with a 15-degree elevator limit. However, for a 15-degree pitch command, the system could not fully settle within the required tolerance band due to actuator saturation.
-
-The actuator limit study showed that approximately **20 degrees of elevator authority** is required to successfully track a 15-degree pitch command. This result demonstrates the importance of actuator limits and control authority in UAV flight control system design.
+![UAV Pitch Simulink Results](03_Results/uav_pitch_simulink_results.png)
 
 ---
 
-## Engineering Interpretation
+## 🔍 Key Engineering Findings
 
-The results show that the selected PID controller provides stable and accurate pitch tracking performance for moderate pitch commands. The system is able to reach the desired pitch angle without overshoot and without steady-state error.
+The final PID controller successfully tracks the 10-degree pitch command with:
 
-The actuator saturation analysis highlights an important engineering limitation. Even if a controller is properly tuned, the physical limits of the control surface can restrict the achievable pitch response. This makes the project more realistic because real UAV flight control systems must always consider actuator limits, control authority and closed-loop stability.
+- Zero overshoot
+- Zero steady-state error
+- Stable closed-loop response
+- Settling time of approximately **5.61 seconds**
+
+The command tracking analysis showed that the controller can successfully track **5-degree** and **10-degree** pitch commands with a **15-degree elevator limit**.
+
+However, for a **15-degree pitch command**, the system could not fully settle within the required tolerance band due to actuator saturation.
+
+The actuator limit study showed that approximately **20 degrees of elevator authority** is required to successfully track a 15-degree pitch command.
 
 ---
 
-## Repository Structure
+## 🧠 Engineering Interpretation
+
+The results show that the selected PID controller provides stable and accurate pitch tracking performance for moderate pitch commands.
+
+The actuator saturation analysis highlights an important engineering limitation. Even if a controller is properly tuned, the physical limits of the control surface can restrict the achievable pitch response.
+
+This makes the project more realistic because real UAV flight control systems must always consider actuator limits, control authority, and closed-loop stability.
+
+---
+
+## 📁 Repository Structure
 
 ```text
-02_UAV_Pitch_Control
+03-UAV-Pitch-Control-Project
 │
-├── 01_MATLAB
+├── MATLAB
 │   ├── uav_pitch_open_loop.m
 │   ├── uav_pitch_pid_control.m
 │   ├── uav_pitch_pid_tuning.m
@@ -176,46 +212,49 @@ The actuator saturation analysis highlights an important engineering limitation.
 │   ├── uav_pitch_simulink_params.m
 │   └── run_uav_pitch_simulink_analysis.m
 │
-├── 02_Simulink
+├── Simulink
 │   └── uav_pitch_pid_control.slx
 │
 ├── 03_Results
-│   ├── uav_pitch_simulink_full_analysis.png
-│   └── uav_pitch_simulink_full_analysis_results.csv
-│
-├── 04_Report
+│   ├── uav_pitch_simulink_results.png
+│   ├── uav_pitch_simulink_performance.csv
+│   ├── uav_pitch_command_tracking.png
+│   ├── uav_pitch_command_tracking_results.csv
+│   ├── uav_pitch_final_controller_response.png
+│   └── uav_pitch_pid_tuning_comparison.png
 │
 └── README.md
 ```
 
 ---
 
-## Tools and Technologies
+## 🛠️ Tools Used
 
 - MATLAB
 - Simulink
 - PID Control
 - Transfer Function Modeling
+- Closed-Loop Control Analysis
 - Numerical Simulation
-- Closed-loop Control Analysis
 - Aerospace Flight Dynamics
+- Engineering Documentation
 
 ---
 
-## Skills Demonstrated
+## ✅ Skills Demonstrated
 
 - UAV longitudinal dynamics modeling
 - PID controller design and tuning
-- MATLAB simulation workflow
-- Simulink block diagram implementation
-- Performance analysis using overshoot, settling time and steady-state error
-- Actuator saturation and control authority evaluation
+- MATLAB scripting
+- Simulink block diagram modeling
+- Closed-loop system analysis
+- Actuator saturation analysis
 - Engineering result interpretation
-- Technical documentation
+- Technical project documentation
 
 ---
 
-## Project Category
+## 🏷️ Project Category
 
 **Aerospace Engineering**  
 **UAV Flight Dynamics**  
@@ -225,8 +264,9 @@ The actuator saturation analysis highlights an important engineering limitation.
 
 ---
 
-## Author
+## 👨‍💻 Author
 
-**Emirhan Tevfik Yiğit**  
+**Emirhan Yiğit**  
 Aerospace Engineering Student  
-MATLAB & Simulink | UAV Design | Flight Dynamics | Engineering Analysis
+
+MATLAB & Simulink | UAV Design | Aerodynamics | Engineering Analysis
