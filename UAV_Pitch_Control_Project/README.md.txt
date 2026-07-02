@@ -227,6 +227,6 @@ The actuator saturation analysis highlights an important engineering limitation.
 
 ## Author
 
-**Emirhan Yiğit**  
+**Emirhan Tevfik Yiğit**  
 Aerospace Engineering Student  
 MATLAB & Simulink | UAV Design | Flight Dynamics | Engineering Analysis
