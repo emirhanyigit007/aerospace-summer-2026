@@ -1,0 +1,15 @@
+# MATLAB / Simulink cache files
+slprj/
+*.slxc
+*_cache.xml
+*.autosave
+*.asv
+
+# Simulink generated files
+*ChecksumOfCache.mat
+*varInfo.mat
+*varinfo.mat
+
+# MATLAB temporary files
+*.m~
+*.mlx~
