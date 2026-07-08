@@ -1,4 +1,4 @@
-\# 🛩️ NACA Airfoil Aerodynamic Analysis
+# 🛩️ NACA Airfoil Aerodynamic Analysis
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-\---
+---
 
 
 
-\## 📌 Project Overview
+## 📌 Project Overview
 
 
 
@@ -38,11 +38,11 @@ The project focuses on the relationship between \*\*angle of attack\*\*, \*\*lif
 
 
 
-\---
+---
 
 
 
-\## 🎯 Project Goals
+## 🎯 Project Goals
 
 
 
@@ -64,11 +64,11 @@ The project focuses on the relationship between \*\*angle of attack\*\*, \*\*lif
 
 
 
-\---
+---
 
 
 
-\## 🧠 Engineering Background
+## 🧠 Engineering Background
 
 
 
@@ -118,7 +118,7 @@ Where:
 
 
 
-\## 📐 Aerodynamic Model
+## 📐 Aerodynamic Model
 
 
 
@@ -162,11 +162,11 @@ This ratio is used to evaluate aerodynamic efficiency.
 
 
 
-\---
+---
 
 
 
-\## 🧪 MATLAB Studies
+## 🧪 MATLAB Studies
 
 
 
@@ -188,11 +188,11 @@ The project includes four main MATLAB analyses:
 
 
 
-\---
+---
 
 
 
-\## 📊 Airfoil Comparison Results
+## 📊 Airfoil Comparison Results
 
 
 
@@ -212,7 +212,7 @@ The airfoils were compared using simplified aerodynamic parameters.
 
 
 
-\### 📈 Lift-to-Drag Ratio Comparison
+### 📈 Lift-to-Drag Ratio Comparison
 
 
 
@@ -220,11 +220,11 @@ The airfoils were compared using simplified aerodynamic parameters.
 
 
 
-\---
+---
 
 
 
-\## 🛩️ Fixed Angle of Attack Comparison
+## 🛩️ Fixed Angle of Attack Comparison
 
 
 
@@ -244,7 +244,7 @@ A fixed angle of attack of \*\*5 degrees\*\* was used to compare lift and drag f
 
 
 
-\### 📊 Fixed Alpha Lift Comparison
+### 📊 Fixed Alpha Lift Comparison
 
 
 
@@ -252,7 +252,7 @@ A fixed angle of attack of \*\*5 degrees\*\* was used to compare lift and drag f
 
 
 
-\### 📊 Fixed Alpha Drag Comparison
+### 📊 Fixed Alpha Drag Comparison
 
 
 
@@ -260,11 +260,11 @@ A fixed angle of attack of \*\*5 degrees\*\* was used to compare lift and drag f
 
 
 
-\---
+---
 
 
 
-\## 🌬️ Velocity Effect Analysis
+## 🌬️ Velocity Effect Analysis
 
 
 
@@ -290,7 +290,7 @@ This means that doubling the velocity increases aerodynamic forces approximately
 
 
 
-\### 📈 Lift Force vs Velocity
+### 📈 Lift Force vs Velocity
 
 
 
@@ -298,7 +298,7 @@ This means that doubling the velocity increases aerodynamic forces approximately
 
 
 
-\### 📉 Drag Force vs Velocity
+### 📉 Drag Force vs Velocity
 
 
 
@@ -306,11 +306,11 @@ This means that doubling the velocity increases aerodynamic forces approximately
 
 
 
-\---
+---
 
 
 
-\## 🔍 Key Engineering Findings
+## 🔍 Key Engineering Findings
 
 
 
@@ -330,11 +330,11 @@ At a fixed angle of attack of 5 degrees, cambered airfoils generate more lift th
 
 
 
-\---
+---
 
 
 
-\## 🧠 Engineering Interpretation
+## 🧠 Engineering Interpretation
 
 
 
@@ -350,12 +350,11 @@ For applications where aerodynamic efficiency is more important, a higher lift-t
 
 
 
-\---
+---
 
 
 
-\## 📁 Repository Structure
-
+## 📁 Repository Structure
 
 
 ```text
@@ -418,11 +417,11 @@ For applications where aerodynamic efficiency is more important, a higher lift-t
 
 
 
-\---
+---
 
 
 
-\## 🛠️ Tools Used
+## 🛠️ Tools Used
 
 
 
@@ -442,11 +441,10 @@ For applications where aerodynamic efficiency is more important, a higher lift-t
 
 
 
-\---
+---
 
 
-
-\## ✅ Skills Demonstrated
+## ✅ Skills Demonstrated
 
 
 
@@ -468,11 +466,11 @@ For applications where aerodynamic efficiency is more important, a higher lift-t
 
 
 
-\---
+---
 
 
 
-\## 🏷️ Project Category
+## 🏷️ Project Category
 
 
 
@@ -490,11 +488,11 @@ For applications where aerodynamic efficiency is more important, a higher lift-t
 
 
 
-\---
+---
 
 
 
-\## 👨‍💻 Author
+## 👨‍💻 Author
 
 
 
