@@ -496,7 +496,7 @@ For applications where aerodynamic efficiency is more important, a higher lift-t
 
 
 
-\*\*Emirhan Yiğit\*\*  
+\*\*Emirhan Tevfik Yiğit\*\*  
 
 Aerospace Engineering Student  
 
