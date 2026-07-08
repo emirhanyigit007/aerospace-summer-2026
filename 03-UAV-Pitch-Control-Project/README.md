@@ -266,7 +266,7 @@ This makes the project more realistic because real UAV flight control systems mu
 
 ## 👨‍💻 Author
 
-**Emirhan Yiğit**  
+**Emirhan Tevfik Yiğit**  
 Aerospace Engineering Student  
 
 MATLAB & Simulink | UAV Design | Aerodynamics | Engineering Analysis
