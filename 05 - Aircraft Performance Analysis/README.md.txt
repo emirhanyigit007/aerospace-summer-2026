@@ -1,4 +1,4 @@
-# ✈️ Aircraft Performance Analysis Using MATLAB
+<h1 align="center">✈️ Aircraft Performance Analysis Using MATLAB</h1>
 
 <p align="center">
   <b>MATLAB-Based Aircraft Performance Study</b>
@@ -8,39 +8,41 @@
   Aerospace Engineering • Flight Performance • MATLAB • Climb Analysis • Altitude Effects
 </p>
 
----
+<hr>
 
-## 📌 Project Overview
+<h2>📌 Project Overview</h2>
 
-This project presents a basic **aircraft performance analysis** using **MATLAB**.
+This project presents a basic <b>aircraft performance analysis</b> using <b>MATLAB</b>.
 
 The main objective of this project is to analyze how aircraft performance changes with flight speed, available thrust, climb capability, and altitude.
 
-The study focuses on important aircraft performance concepts such as **stall speed**, **drag**, **thrust required**, **power required**, **rate of climb**, **best climb speed**, and **altitude effects**.
+The study focuses on important aircraft performance concepts such as <b>stall speed</b>, <b>drag</b>, <b>thrust required</b>, <b>power required</b>, <b>rate of climb</b>, <b>best climb speed</b>, and <b>altitude effects</b>.
 
-This project is a continuation of the previous aerodynamic analysis studies and represents a transition from airfoil-level analysis to full aircraft-level performance analysis.
+This project is a continuation of previous aerodynamic analysis studies and represents a transition from airfoil-level analysis to full aircraft-level performance analysis.
 
----
+<hr>
 
-## 🎯 Project Goals
+<h2>🎯 Project Goals</h2>
 
-- Calculate stall speed
-- Analyze lift coefficient required for level flight
-- Calculate drag using a drag polar model
-- Determine thrust required for steady level flight
-- Calculate power required
-- Estimate best endurance speed
-- Estimate best range speed
-- Analyze excess thrust and excess power
-- Calculate rate of climb
-- Determine best climb speed
-- Study the effect of altitude on aircraft performance
-- Save results as figures and CSV tables
-- Document the project in a clean engineering format
+<ul>
+  <li>Calculate stall speed</li>
+  <li>Analyze lift coefficient required for level flight</li>
+  <li>Calculate drag using a drag polar model</li>
+  <li>Determine thrust required for steady level flight</li>
+  <li>Calculate power required</li>
+  <li>Estimate best endurance speed</li>
+  <li>Estimate best range speed</li>
+  <li>Analyze excess thrust and excess power</li>
+  <li>Calculate rate of climb</li>
+  <li>Determine best climb speed</li>
+  <li>Study the effect of altitude on aircraft performance</li>
+  <li>Save results as figures and CSV tables</li>
+  <li>Document the project in a clean engineering format</li>
+</ul>
 
----
+<hr>
 
-## 🧠 Engineering Background
+<h2>🧠 Engineering Background</h2>
 
 Aircraft performance analysis is one of the fundamental topics in aerospace engineering.
 
@@ -48,17 +50,19 @@ It helps engineers understand how an aircraft behaves under different flight con
 
 In steady level flight, the basic force balance is:
 
-**Lift = Weight**
+<p align="center">
+  <b>Lift = Weight</b>
+</p>
 
-**Thrust Required = Drag**
+<p align="center">
+  <b>Thrust Required = Drag</b>
+</p>
 
 This means that the aircraft must generate enough lift to support its weight and enough thrust to overcome aerodynamic drag.
 
----
+<hr>
 
-## 📐 Aircraft Parameters
-
-The aircraft model used in this project is a simplified representative aircraft model.
+<h2>📐 Aircraft Parameters</h2>
 
 | Parameter | Value | Unit |
 |---|---:|---|
@@ -70,35 +74,43 @@ The aircraft model used in this project is a simplified representative aircraft 
 | Maximum Lift Coefficient | 1.50 | - |
 | Available Thrust at Sea Level | 1800 | N |
 
----
+<hr>
 
-## 📐 Aerodynamic Model
+<h2>📐 Aerodynamic Model</h2>
 
 The lift coefficient required for steady level flight is calculated using:
 
-**CL = W / (0.5 × rho × V² × S)**
+<p align="center">
+  <b>CL = W / (0.5 × rho × V² × S)</b>
+</p>
 
 The drag coefficient is calculated using a parabolic drag polar:
 
-**CD = CD0 + k × CL²**
+<p align="center">
+  <b>CD = CD0 + k × CL²</b>
+</p>
 
 The drag force is calculated as:
 
-**D = 0.5 × rho × V² × S × CD**
+<p align="center">
+  <b>D = 0.5 × rho × V² × S × CD</b>
+</p>
 
 In steady level flight:
 
-**Thrust Required = Drag**
+<p align="center">
+  <b>Thrust Required = Drag</b>
+</p>
 
 The power required is calculated as:
 
-**Power Required = Thrust Required × Velocity**
+<p align="center">
+  <b>Power Required = Thrust Required × Velocity</b>
+</p>
 
----
+<hr>
 
-## 🧪 MATLAB Analyses
-
-This project includes three main MATLAB analyses:
+<h2>🧪 MATLAB Analyses</h2>
 
 | Analysis | MATLAB File | Description |
 |---|---|---|
@@ -107,9 +119,9 @@ This project includes three main MATLAB analyses:
 | Altitude Effect Analysis | `aircraft_performance_altitude_analysis.m` | Studies how air density and altitude affect stall speed, climb performance and maximum speed |
 | Run All Analyses | `run_all_aircraft_performance_analysis.m` | Runs all aircraft performance analyses automatically |
 
----
+<hr>
 
-## 📊 Basic Performance Results
+<h2>📊 Basic Performance Results</h2>
 
 The basic performance analysis evaluates how aircraft performance changes with velocity.
 
@@ -121,13 +133,15 @@ The basic performance analysis evaluates how aircraft performance changes with v
 | Minimum Power Required | 28456.52 W |
 | Best Endurance Speed | 31.00 m/s |
 
-### 📈 Basic Aircraft Performance Plot
+<h3>📈 Basic Aircraft Performance Plot</h3>
 
-![Basic Aircraft Performance Analysis](Results/Figures/aircraft_performance_basic_analysis.png)
+<p align="center">
+  <img src="Results/Figures/aircraft_performance_basic_analysis.png" alt="Basic Aircraft Performance Analysis">
+</p>
 
----
+<hr>
 
-## 🚀 Climb Performance Results
+<h2>🚀 Climb Performance Results</h2>
 
 The climb analysis includes thrust available, thrust required, excess power and rate of climb.
 
@@ -140,13 +154,15 @@ The climb analysis includes thrust available, thrust required, excess power and 
 | Best Climb Speed | 52.00 m/s |
 | Maximum Level Flight Speed | 82.00 m/s |
 
-### 📈 Climb Performance Plot
+<h3>📈 Climb Performance Plot</h3>
 
-![Aircraft Performance Climb Analysis](Results/Figures/aircraft_performance_climb_analysis.png)
+<p align="center">
+  <img src="Results/Figures/aircraft_performance_climb_analysis.png" alt="Aircraft Performance Climb Analysis">
+</p>
 
----
+<hr>
 
-## 🌍 Altitude Effect Analysis
+<h2>🌍 Altitude Effect Analysis</h2>
 
 The altitude analysis studies how aircraft performance changes as altitude increases.
 
@@ -154,7 +170,7 @@ As altitude increases, air density decreases. This affects lift generation, avai
 
 The simplified air density model used in this project is based on an exponential atmosphere approximation.
 
-### 📊 Altitude Summary Results
+<h3>📊 Altitude Summary Results</h3>
 
 | Altitude | Air Density | Available Thrust | Stall Speed | Max ROC | Best Climb Speed | Max Level Speed |
 |---:|---:|---:|---:|---:|---:|---:|
@@ -163,50 +179,51 @@ The simplified air density model used in this project is based on an exponential
 | 3000 m | 0.8607 kg/m³ | 1264.71 N | 33.87 m/s | 1.97 m/s | 55.00 m/s | 80.00 m/s |
 | 4500 m | 0.7215 kg/m³ | 1060.11 N | 37.00 m/s | 1.16 m/s | 57.00 m/s | 77.00 m/s |
 
-### 📈 Altitude Effect Plot
+<h3>📈 Altitude Effect Plot</h3>
 
-![Aircraft Performance Altitude Analysis](Results/Figures/aircraft_performance_altitude_analysis.png)
+<p align="center">
+  <img src="Results/Figures/aircraft_performance_altitude_analysis.png" alt="Aircraft Performance Altitude Analysis">
+</p>
 
----
+<hr>
 
-## 🔍 Key Engineering Findings
+<h2>🔍 Key Engineering Findings</h2>
 
-The basic performance analysis shows that the aircraft has a stall speed of **28.39 m/s** at sea level.
+<ul>
+  <li>The aircraft has a stall speed of <b>28.39 m/s</b> at sea level.</li>
+  <li>The minimum drag condition occurs at approximately <b>40 m/s</b>.</li>
+  <li>The minimum power required occurs at approximately <b>31 m/s</b>.</li>
+  <li>The maximum rate of climb occurs at approximately <b>52 m/s</b>.</li>
+  <li>At sea level, the maximum rate of climb is <b>3.85 m/s</b>, which is approximately <b>757 ft/min</b>.</li>
+  <li>The maximum level flight speed is approximately <b>82 m/s</b>.</li>
+</ul>
 
-The minimum drag condition occurs at approximately **40 m/s**, which can be interpreted as the best range speed approximation for this simplified model.
+<hr>
 
-The minimum power required occurs at approximately **31 m/s**, which can be interpreted as the best endurance speed approximation.
-
-The climb analysis shows that the aircraft reaches its maximum rate of climb at approximately **52 m/s**.
-
-At sea level, the maximum rate of climb is **3.85 m/s**, which is approximately **757 ft/min**.
-
-The maximum level flight speed is approximately **82 m/s**, where thrust available is still sufficient to overcome drag.
-
----
-
-## 🌍 Altitude Performance Interpretation
+<h2>🌍 Altitude Performance Interpretation</h2>
 
 The altitude analysis clearly shows that aircraft performance decreases as altitude increases.
 
 As altitude increases:
 
-- Air density decreases
-- Available thrust decreases
-- Stall speed increases
-- Maximum rate of climb decreases
-- Best climb speed slightly increases
-- Maximum level flight speed decreases
+<ul>
+  <li>Air density decreases</li>
+  <li>Available thrust decreases</li>
+  <li>Stall speed increases</li>
+  <li>Maximum rate of climb decreases</li>
+  <li>Best climb speed slightly increases</li>
+  <li>Maximum level flight speed decreases</li>
+</ul>
 
-At sea level, the aircraft can achieve a maximum rate of climb of **3.85 m/s**.
+At sea level, the aircraft can achieve a maximum rate of climb of <b>3.85 m/s</b>.
 
-At **4500 m**, the maximum rate of climb decreases to **1.16 m/s**.
+At <b>4500 m</b>, the maximum rate of climb decreases to <b>1.16 m/s</b>.
 
 This shows that the aircraft has less excess power available for climbing at higher altitudes.
 
----
+<hr>
 
-## 🧠 Engineering Interpretation
+<h2>🧠 Engineering Interpretation</h2>
 
 This project demonstrates the relationship between aerodynamic drag, available thrust, excess power and climb performance.
 
@@ -220,98 +237,117 @@ Rate of climb depends on excess power. When thrust available is greater than thr
 
 As altitude increases, air density decreases and the available thrust decreases. Therefore, the aircraft has less excess power and a lower climb rate.
 
----
+<hr>
 
-## ⚠️ Model Limitations
+<h2>⚠️ Model Limitations</h2>
 
 This project uses a simplified aircraft performance model.
 
 The analysis does not include:
 
-- Real engine performance maps
-- Compressibility effects
-- Detailed propeller efficiency
-- Wind effects
-- Aircraft stability and control effects
-- Fuel burn and weight variation
-- Real atmospheric temperature variation
-- Detailed aerodynamic data from CFD or wind tunnel testing
+<ul>
+  <li>Real engine performance maps</li>
+  <li>Compressibility effects</li>
+  <li>Detailed propeller efficiency</li>
+  <li>Wind effects</li>
+  <li>Aircraft stability and control effects</li>
+  <li>Fuel burn and weight variation</li>
+  <li>Real atmospheric temperature variation</li>
+  <li>Detailed aerodynamic data from CFD or wind tunnel testing</li>
+</ul>
 
 The purpose of this project is to understand the fundamental aircraft performance relationships using MATLAB.
 
----
+<hr>
 
-## 📁 Repository Structure
+<h2>📁 Repository Structure</h2>
 
-- `MATLAB`
-  - `aircraft_performance_basic_analysis.m`
-  - `aircraft_performance_climb_analysis.m`
-  - `aircraft_performance_altitude_analysis.m`
-  - `run_all_aircraft_performance_analysis.m`
+<h3>MATLAB</h3>
 
-- `Results`
-  - `Figures`
-    - `aircraft_performance_basic_analysis.png`
-    - `aircraft_performance_climb_analysis.png`
-    - `aircraft_performance_altitude_analysis.png`
-  - `Tables`
-    - `aircraft_performance_basic_results.csv`
-    - `aircraft_performance_climb_results.csv`
-    - `aircraft_performance_altitude_full_results.csv`
-    - `aircraft_performance_altitude_summary_results.csv`
+<ul>
+  <li><code>aircraft_performance_basic_analysis.m</code></li>
+  <li><code>aircraft_performance_climb_analysis.m</code></li>
+  <li><code>aircraft_performance_altitude_analysis.m</code></li>
+  <li><code>run_all_aircraft_performance_analysis.m</code></li>
+</ul>
 
-- `README.md`
+<h3>Results / Figures</h3>
 
----
+<ul>
+  <li><code>aircraft_performance_basic_analysis.png</code></li>
+  <li><code>aircraft_performance_climb_analysis.png</code></li>
+  <li><code>aircraft_performance_altitude_analysis.png</code></li>
+</ul>
 
-## 🛠️ Tools Used
+<h3>Results / Tables</h3>
 
-- MATLAB
-- Numerical simulation
-- Aircraft performance analysis
-- Aerodynamic drag polar modeling
-- Thrust required calculation
-- Power required calculation
-- Rate of climb calculation
-- Altitude effect analysis
-- Data visualization
-- CSV result export
-- GitHub documentation
+<ul>
+  <li><code>aircraft_performance_basic_results.csv</code></li>
+  <li><code>aircraft_performance_climb_results.csv</code></li>
+  <li><code>aircraft_performance_altitude_full_results.csv</code></li>
+  <li><code>aircraft_performance_altitude_summary_results.csv</code></li>
+</ul>
 
----
+<hr>
 
-## ✅ Skills Demonstrated
+<h2>🛠️ Tools Used</h2>
 
-- Aircraft performance modeling
-- Stall speed calculation
-- Drag polar analysis
-- Thrust required analysis
-- Power required analysis
-- Excess power calculation
-- Rate of climb analysis
-- Altitude performance interpretation
-- MATLAB scripting
-- Engineering visualization
-- Technical documentation
+<ul>
+  <li>MATLAB</li>
+  <li>Numerical simulation</li>
+  <li>Aircraft performance analysis</li>
+  <li>Aerodynamic drag polar modeling</li>
+  <li>Thrust required calculation</li>
+  <li>Power required calculation</li>
+  <li>Rate of climb calculation</li>
+  <li>Altitude effect analysis</li>
+  <li>Data visualization</li>
+  <li>CSV result export</li>
+  <li>GitHub documentation</li>
+</ul>
 
----
+<hr>
 
-## 🏷️ Project Category
+<h2>✅ Skills Demonstrated</h2>
 
-**Aerospace Engineering**  
-**Aircraft Performance**  
-**Flight Mechanics**  
-**MATLAB Simulation**  
-**Aerodynamic Analysis**  
-**Climb Performance**  
-**Altitude Effects**  
-**Engineering Portfolio**
+<ul>
+  <li>Aircraft performance modeling</li>
+  <li>Stall speed calculation</li>
+  <li>Drag polar analysis</li>
+  <li>Thrust required analysis</li>
+  <li>Power required analysis</li>
+  <li>Excess power calculation</li>
+  <li>Rate of climb analysis</li>
+  <li>Altitude performance interpretation</li>
+  <li>MATLAB scripting</li>
+  <li>Engineering visualization</li>
+  <li>Technical documentation</li>
+</ul>
 
----
+<hr>
 
-## 👨‍💻 Author
+<h2>🏷️ Project Category</h2>
 
-**Emirhan Tevfik Yiğit**  
-Aerospace Engineering Student  
+<p>
+  <b>Aerospace Engineering</b><br>
+  <b>Aircraft Performance</b><br>
+  <b>Flight Mechanics</b><br>
+  <b>MATLAB Simulation</b><br>
+  <b>Aerodynamic Analysis</b><br>
+  <b>Climb Performance</b><br>
+  <b>Altitude Effects</b><br>
+  <b>Engineering Portfolio</b>
+</p>
 
-MATLAB & Simulink | UAV Design | Aerodynamics | Flight Performance | Engineering Analysis
+<hr>
+
+<h2>👨‍💻 Author</h2>
+
+<p>
+  <b>Emirhan Yiğit</b><br>
+  Aerospace Engineering Student
+</p>
+
+<p>
+  MATLAB & Simulink | UAV Design | Aerodynamics | Flight Performance | Engineering Analysis
+</p>
